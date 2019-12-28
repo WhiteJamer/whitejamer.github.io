@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mihail Kuzin - Web developer</title>
 	<link rel="stylesheet" href="css/reset.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/all.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -14,10 +13,10 @@
 <body>
 	<header class="header">
 		<div class="header-nav">
-			<a href="">Наверх</a>
-			<a href="">Мои навыки</a>
-			<a href="">Портфолио</a>
-			<a href="">Контакты</a>
+			<a href="#skills">Мои навыки</a>
+			<a href="#portfolio">Портфолио</a>
+			<a href="https://github.com/WhiteJamer" target="_blank">Мой Github</a>
+			<a href="#contacts">Контакты</a>
 		</div>
 	</header>
 	<div class="header-background">
@@ -44,9 +43,9 @@
 	</div>
 	<div class="wrapper">
 		<!-- Краткая информация -->
-		<section class="about_section">
-			<div class="skills_description">
-				<h2 class="section_label">Мои навыки</h2>
+		<section class="about_section gr_style">
+			<div class="skills_description" id="skills">
+				<h2>Мои навыки</h2>
 				<li>Работаю с Linux, свободно работаю с консолью(SSH).</li>
 				<li>Продвинутые навыки GIT(Командные навыки, Git Flow).</li>
 				<li>Есть навыки верстки, умею быстро верстать на Bootstrap.</li>
@@ -57,25 +56,44 @@
 				<li>Учусь писать правильное REST-API, но пока в начале пути.</li>
 			</div>
 		</section>
-		<section class="contacts_section">
+		<section class="contacts_section gr_style" id="contacts">
 			<div class="contacts">
-				<h2 class="section_label">Контакты</h2>
-				<li><i class="fas fa-at"></i><span>muxah3258@gmail.com</span></li>
-				<li><i class="fas fa-phone"></i><span>+7 964 843 45 01</span></li>
-				<li><i class="fab fa-telegram"></i><span><a href="https://teleg.run/https://teleg.run/whitejamer">@whitejamer</a></span></li>
+				<h2>Контакты</h2>
+				<li class="contact-item"><i class="fas fa-at"></i><span>muxah3258@gmail.com</span></li>
+				<li class="contact-item"><i class="fas fa-phone"></i><span>+7 964 843 45 01</span></li>
+				<li class="contact-item"><i class="fab fa-telegram"></i><span><a href="https://teleg.run/https://teleg.run/whitejamer">@whitejamer</a></span></li>
 			</div>
 		</section>
-		<section class="portfolio_section">
-			<div class="section_headline">
+		<section class="portfolio_section" id="portfolio">
+			<div class="section_headline gr_style">
 				<h2 >Портфолио</h2>
 			</div>
-			<div class="contacts_section">
-				<h2 class="section_label">Github</h2>
-				<li><i class="fab fa-github"></i><span><a href="https://github.com/WhiteJamer">https://github.com/WhiteJamer</a></span></li>
+			<div class="contacts_other gr_style" style="align-items: center;">
+				<li class="contact-item"><i class="fab fa-github"></i><span><a href="https://github.com/WhiteJamer">https://github.com/WhiteJamer</a></span></li>
 			</div>
 			<!-- Swiper -->
-		  <div class="swiper-container" style="margin-top: 2rem; text-align:; center;">
+		  <div class="gr_style swiper-container" style="margin-top: 2rem; text-align:; center;">
 		    <div class="swiper-wrapper">
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
+		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
 		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
 		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
 		      <div class="swiper-slide" style="background-image:url(./images/top-background.jpg)"></div>
@@ -84,26 +102,34 @@
 		    </div>
 		    <!-- Add Pagination -->
 		    <div class="swiper-pagination"></div>
-		    <!-- Add Arrows -->
-		    <div class="swiper-button-next"></div>
-		    <div class="swiper-button-prev"></div>
 		  </div>
-		  <div class="portfolio-item">
+		  <div class="portfolio-item gr_style">
 		  	<h2>Django blog</h2>
 		  	<img src="http://wpmu.mah.se/nmict172group7/files/2017/09/blog.jpg" alt="" style="margin-top: 1rem">
 		  	<p style="margin-top: 2rem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни пояс они путь грамматики которой если точках, своего щеке мир, обеспечивает продолжил вопроса необходимыми lorem рукописи единственное безопасную ведущими снова то напоивший дал великий инициал подпоясал продолжил текста! Путь рыбными одна там даже решила маленький курсивных имеет сих, lorem рекламных скатился маленькая составитель, снова, его ты великий залетают выйти силуэт они все жизни бросил точках... <a href="#">Подробнее</a></p>
 		  </div>
-		  <div class="portfolio-item">
+		  <div class="portfolio-item gr_style">
 		  	<h2>DealerApp</h2>
 		  	<img src="http://wpmu.mah.se/nmict172group7/files/2017/09/blog.jpg" alt="" style="margin-top: 1rem">
 		  	<p style="margin-top: 2rem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни пояс они путь грамматики которой если точках, своего щеке мир, обеспечивает продолжил вопроса необходимыми lorem рукописи единственное безопасную ведущими снова то напоивший дал великий инициал подпоясал продолжил текста! Путь рыбными одна там даже решила маленький курсивных имеет сих, lorem рекламных скатился маленькая составитель, снова, его ты великий залетают выйти силуэт они все жизни бросил точках... <a href="#">Подробнее</a></p>
 		  </div>
-		  <div class="portfolio-item">
+		  <div class="portfolio-item gr_style">
 		  	<h2>BooksLiterators API</h2>
 		  	<img src="http://wpmu.mah.se/nmict172group7/files/2017/09/blog.jpg" alt="" style="margin-top: 1rem">
 		  	<p style="margin-top: 2rem">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни пояс они путь грамматики которой если точках, своего щеке мир, обеспечивает продолжил вопроса необходимыми lorem рукописи единственное безопасную ведущими снова то напоивший дал великий инициал подпоясал продолжил текста! Путь рыбными одна там даже решила маленький курсивных имеет сих, lorem рекламных скатился маленькая составитель, снова, его ты великий залетают выйти силуэт они все жизни бросил точках... <a href="#">Подробнее</a></p>
 		  </div>
 		</section>
+		<div class="contact-me_section gr_style mt-1">
+			<h3 style="text-align: center;">Форма обратной связи</h3>
+			<form action="" class="contact-form mt-1">
+				<p class="inline-form-group">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="text" name="email" placeholder="Ваша почта" >
+				</p>
+				<textarea name="message" id="contact-form_message" cols="30" rows="10" placeholder="Ваше сообщение" class="form-control mt-1"></textarea>
+				<input type="submit" value="Отправить" class="btn btn-send mt-1">
+			</form>
+		</div>
 	</div>
 	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
@@ -123,14 +149,17 @@
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
+        clickable: true,
       },
       autoplay: {
 		    delay: 3000,
 		  },
-		  navigation: {
-		    nextEl: '.swiper-button-next',
-		    prevEl: '.swiper-button-prev',
-		  },
+		  IOSEdgeSwipeDetection: true,
+	    onTouchStart: function()
+	    {
+	        return false;
+	    },
+	    scrollbarDraggable: true,
     });
   </script>
 </body>
