@@ -2,7 +2,12 @@
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+
 }
+	*::selection{ 
+		color: #fff;
+		background: #ff9c24;
+	}
 
 h1{
 	font-size: 70px;
@@ -83,84 +88,75 @@ a:hover{
 /*Классы для отступов*/
 .mt-1{margin-top: 1rem;}.mt-2{margin-top: 2rem;}.mt-3{margin-top: 3rem;}
 
-.header-background{
-	position: relative;
-	background: url("https://i.gifer.com/6q85.gif") top center no-repeat;
-	background-size: 1930px;
-	height: 700px;
+/*Header */
+#header{
+	background: #fff;
+	max-width: 100%;
 }
-.background-shadow{
-	position: absolute;
-	background-color: #000;
-	height: 100%;
-	width: 100%;
-	opacity: 0.1;
-	transition: 0.5s;
-}
-/*HEADER*/
 	.header-nav a{
 		font-weight: 300;
 		text-decoration: none;
 		color: #000;
 	}
+/* Footer */
+#footer{
+	margin-top: 3rem;
+	max-width: 100%;
+	background-color: #fff;
+}
 
-	#info__header{
+	.author-banner{
 		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		z-index: 2;
+		background: url("https://i.gifer.com/6q85.gif") top center no-repeat;
+		background-size: 1930px;
+		height: 700px;
 	}
-	.top-info{
-		margin: auto 0;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		height: 100%;
-		width: auto;
-	}
-		.top-info .photo-wrapper{
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: center;
+		.author-banner_shadow{
+			position: absolute;
+			background-color: #000;
+			height: 100%;
+			width: 100%;
+			opacity: 0.1;
+			transition: 0.5s;
 		}
-			.photo-wrapper .photo{
-				background: url("../images/avatar.jpg") top center no-repeat;
-				background-size: 200px;
-				background-color: black;
-				height: 200px;
-				width: 200px;
-				border-radius: 100%;
-				border: 0.3rem solid #fff;
-			}
-		.headline{
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-		}
-			.headline .place{
+			.banner_info{
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
-				color: #eee;
+				height: 100%;
+				z-index: 2;
 			}
-			.headline .place::after{
-				content: '';
-				display: inline-block;
-			}
-			.headline .name{
-				margin-top: 0.3rem;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				color: #fcab3a;
-				font-weight: 700;
-			}
+				.photo{
+					background: url("../images/avatar.jpg") top center no-repeat;
+					background-size: 200px;
+					background-color: black;
+					height: 200px;
+					width: 200px;
+					border-radius: 100%;
+					border: 0.3rem solid #fff;
+				}
+					.banner_info .place{
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						color: #eee;
+					}
+						.banner_info .place::after{
+							content: '';
+							display: inline-block;
+						}
+					.banner_info .name{
+						margin-top: 0.3rem;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						color: #fcab3a;
+						font-weight: 700;
+					}
 .wrapper{
 	max-width: 960px;
 	align-items: center;
@@ -227,10 +223,9 @@ a:hover{
 	align-items: center;
 }
 @media(min-width: 960px){
-	.header{
+	#header{
 		display: flex;
 		justify-content: center;
-		background-color: #fff;
 	}
 	.header-nav{
 		display: inherit;
@@ -260,23 +255,15 @@ a:hover{
 	.portfolio-item img{
 		width: 100%;
 	}
-	header{
-		max-width: 100%;
-	}
-	.header-backgrount{
-		max-width: 100%;
-	}
 	.wrapper{
 		max-width: 100%;
 		margin: 0 1rem;
 	}
 }
 @media (max-width: 640px){
-	.header{
+	#header{
 		display: flex;
 		flex-direction: column;
-		background-color: #fff;
-		width: 100%;
 	}
 	/*Navbar menu*/
 	.header-nav{
@@ -325,9 +312,8 @@ a:hover{
 
 }
 @media (min-width: 641px){
-	.header{
+	#header{
 		display: flex;
-		background-color: #fff;
 		justify-content: center;
 	}
 	.header-nav a{
