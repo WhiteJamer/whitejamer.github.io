@@ -14,7 +14,7 @@ new Vue({
 	},
 	mounted () {
     axios
-      .get('http://whitejamer.pythonanywhere.com/portfolio/admin/')
+      .get('https://whitejamer.pythonanywhere.com/portfolio/admin/')
       .then(response => (this.items = response.data))
   }
 });
