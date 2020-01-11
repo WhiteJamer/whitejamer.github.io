@@ -10,25 +10,26 @@ html, body {
 	}
 
 h1{
-	font-size: 70px;
+	font-size: 50px;
 	font-family: 'Comfortaa', cursive;
 	font-weight: 400;
 }
 h2{
 	font-family: 'Comfortaa', cursive;
-	font-size: 50px;
-	font-weight: 400;
+	font-size: 30px;
+	font-weight: 700;
 }
 h3{
 	font-family: 'Comfortaa', cursive;
-	font-size: 30px;
-	font-weight: 700;
+	font-size: 23px;
+	font-weight: 400;
 }
 body{
 	font-weight: 400;
 	background: #edeef0;
-	font-size: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Open Sans', sans-serif;
 }
 a{text-decoration: none;}
 a{
@@ -37,6 +38,14 @@ a{
 a:hover{
 	color: #ff8c00;
 }
+img{
+	margin: 0 !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
 .navbar_show-btn {
 	display: none;
 }
@@ -46,6 +55,7 @@ a:hover{
 	background-color: #fff;
 	padding: 2rem;
 	max-width: 100%;
+	border-radius: 0.5rem;
 }
 /*Форма обратной связи*/
 .contact-form{
@@ -144,10 +154,6 @@ a:hover{
 						align-items: center;
 						color: #eee;
 					}
-						.banner_info .place::after{
-							content: '';
-							display: inline-block;
-						}
 					.banner_info .name{
 						margin-top: 0.3rem;
 						display: flex;
@@ -155,7 +161,6 @@ a:hover{
 						justify-content: center;
 						align-items: center;
 						color: #fcab3a;
-						font-weight: 700;
 					}
 .wrapper{
 	max-width: 960px;
@@ -207,14 +212,32 @@ a:hover{
 	margin-top: 2rem;
 }
 .portfolio-item{
+	padding: 0;
 	margin-top: 1rem;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
 }
 	.portfolio-item img{
-		width: 100%;
+		height: 350px;
+		width: 350px;
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
+	.portfolio-item .image{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: 1rem;
+	}
+	.portfolio-item .sub-title{
+		color: #b8b8b8;
+	}
+	.portfolio-item .content{
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
+	.portfolio-item .content h2{
+		padding-bottom: 0.5rem;
 	}
 .section_headline{
 	display: flex;
@@ -252,13 +275,21 @@ a:hover{
 	.headline h1{
 		font-size: 40px;
 	}
-	.portfolio-item img{
+	/*.portfolio-item img{
 		width: 100%;
-	}
+	}*/
 	.wrapper{
 		max-width: 100%;
 		margin: 0 1rem;
 	}
+	.portfolio-item{
+		padding: 0;
+	}
+		.portfolio-item img{
+			height: 100%;
+			width: auto;
+		}
+
 }
 @media (max-width: 640px){
 	#header{
@@ -295,20 +326,41 @@ a:hover{
 	}
 	
 	h1{
-		font-size: 50px;
+		font-size: 40px;
 	}
 	h2{
-		font-size: 35px;
+		font-size: 25px;
 	}
 	h3{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	body{
 		font-size: 15px;
 	}
-	.portfolio-item h2{
+	.portfolio-item{
+		flex-direction: column;
+	}
+	.portfolio-item .image{
+		margin: 0;
+		margin-bottom: 1rem;
+		align-items: center;
+	}
+		.portfolio-item img{
+			border-radius: 0;
+			width: 100%;
+			height: auto;
+		}
+	.portfolio-item .content{
+		width: 100%;
+		padding: 0;
 		text-align: center;
 	}
+		.portfolio-item h2{
+			text-align: center;
+		}
+		.portfolio-item .sub-title{
+			text-align: center;
+		}
 
 }
 @media (min-width: 641px){
