@@ -221,10 +221,14 @@ p {
 	.portfolio-item img{
 		height: 350px;
 		width: 350px;
+		border: 0.3rem solid transparent;
 		border-radius: 0.5rem 0 0 0.5rem;
+		transition: 0.1s;
 	}
 	.portfolio-item img:hover{
 		cursor: pointer;
+		border: 0.3rem solid #ff9c24;
+		transition: 0.1s;
 	}
 	.portfolio-item .image{
 		display: flex;
@@ -339,6 +343,7 @@ p {
 		.portfolio-item img{
 			height: 100%;
 			width: auto;
+			border: 0.1rem #000 ;
 		}
 
 }
@@ -397,9 +402,11 @@ p {
 		align-items: center;
 	}
 		.portfolio-item img{
-			border-radius: 0;
 			width: 100%;
 			height: auto;
+			border-radius: 0;
+			outline: 0.1rem dashed #ff9c24;
+			outline-offset: -0.1rem;
 		}
 	.portfolio-item .content{
 		width: 100%;
@@ -429,6 +436,23 @@ p {
 		color: #ff9c24;
 		border-bottom: 0.3rem solid #ff9c24;
 	}
+}
+
+/*CSS Animation*/
+img {
+    width: 200px;
+    animation-name: blinking;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blinking {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
 }
 
 
