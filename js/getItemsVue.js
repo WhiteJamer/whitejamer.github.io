@@ -10,8 +10,14 @@ new Vue({
 	el: '#app',
 	data :{
 		items: null,
-		items2: ['ggg', 'ggg'],
+		show: false,
+    item: ' ',
 	},
+  methods: {
+    getItem: function(item){
+      this.item = item;
+    }
+  },
 	mounted () {
     axios
       .get('https://whitejamer.pythonanywhere.com/portfolio/admin/')

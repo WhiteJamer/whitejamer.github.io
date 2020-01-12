@@ -13,6 +13,23 @@
 </head>
 <body>
 	<div id="app">
+		<!-- Components -->
+		<div class="modal-shadow" v-show="show" style="display: none;">
+			<div id="portfolio-detail_template" class="modal">
+				<div class="ui">
+					<i class="fa fa-times exit-btn" aria-hidden="true" v-on:click="show = false"></i>
+
+				</div>
+				<div class="content">
+					<h2>{{item.title}}</h2>
+					<p class="sub-title">{{item.sub_title}}</p>
+					<p v-html="item.short_description"></p>
+					<p v-html="item.body"></p>
+					<a href="#">Github</a>
+				</div>
+			</div>
+		</div>
+
 		<!-- Header -->
 		<header id="header">
 			<span class="navbar_show-btn" id="header-navbar_show-btn"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -68,7 +85,7 @@
 				</div>
 				<div v-for="item in items" class="portfolio-item gr_style">
 					<div class="image">
-						<img v-bind:src="item.img" alt="" style="margin-top: 1rem">
+						<img v-bind:src="item.img" alt="" style="margin-top: 1rem" v-on:click="getItem(item), show=!show">
 					</div>
 			  	<div class="content">
 			  		<h2>{{item.title}}</h2>

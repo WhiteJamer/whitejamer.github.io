@@ -18,6 +18,7 @@ h2{
 	font-family: 'Comfortaa', cursive;
 	font-size: 30px;
 	font-weight: 700;
+	padding-bottom: 0.5rem;
 }
 h3{
 	font-family: 'Comfortaa', cursive;
@@ -222,13 +223,16 @@ p {
 		width: 350px;
 		border-radius: 0.5rem 0 0 0.5rem;
 	}
+	.portfolio-item img:hover{
+		cursor: pointer;
+	}
 	.portfolio-item .image{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		margin-right: 1rem;
 	}
-	.portfolio-item .sub-title{
+	.sub-title{
 		color: #b8b8b8;
 	}
 	.portfolio-item .content{
@@ -236,15 +240,59 @@ p {
 		flex-direction: column;
 		padding: 1rem;
 	}
-	.portfolio-item .content h2{
-		padding-bottom: 0.5rem;
-	}
 .section_headline{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+/*MODALS*/
+.modal-shadow{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,.8);
+	z-index: 10;
+	justify-content: center;
+	align-items: center;
+}
+.modal{
+	max-width: 60%;
+	position: fixed;
+	box-shadow: 0 2px 0 0 #d7d8db, 0 0 0 2px #e3e4e8;
+	border-radius: 0.5rem;
+	background: #fff;
+	padding: 1rem;
+	height: 90%;
+}
+
+.modal .ui{
+	display: flex;
+	height: 2rem;
+	justify-content: flex-end;
+	align-items: center;
+}
+.modal .content{
+	width: 100%;
+	height: 95%;
+	overflow: auto;
+	background-color: #fff;
+	scrollbar-width: none;
+}
+.modal .content h2, .sub-title{
+	text-align: center;
+}
+.modal .content::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+.exit-btn:hover{
+	cursor: pointer;
+}
+
+
+
 @media(min-width: 960px){
 	#header{
 		display: flex;
@@ -358,10 +406,13 @@ p {
 		.portfolio-item h2{
 			text-align: center;
 		}
-		.portfolio-item .sub-title{
+		.sub-title{
 			text-align: center;
 		}
-
+	.modal{
+		max-width: 100%;
+		height: 100%;
+	}
 }
 @media (min-width: 641px){
 	#header{
