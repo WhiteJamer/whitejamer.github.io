@@ -25,6 +25,10 @@
 					<p class="sub-title">{{item.sub_title}}</p>
 					<p v-html="item.short_description"></p>
 					<p v-html="item.body"></p>
+					<b>Краткое описание:</b>
+					<p style="margin-top: 0.5rem;" v-html="item.short_description"></p>
+					<b>Подробное описание:</b>
+					<p style="margin-top: 0.5rem;" v-html="item.body"></p>
 					<a href="#">Github</a>
 				</div>
 			</div>
@@ -115,12 +119,13 @@
 	</div>
 
   <!-- Dev version -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/getItemsVue.js"></script>
   <!-- Production version -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 
+	<!-- Self scripts -->
+  <script src="js/app.js"></script>
   <script src="js/simple-navbar.js"></script>
 </body>
 </html>

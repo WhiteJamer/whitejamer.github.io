@@ -280,6 +280,9 @@ p {
 	background-color: #fff;
 	scrollbar-width: none;
 }
+.modal .content img{
+	max-width: 100%;
+}
 .modal .content h2, .sub-title{
 	text-align: center;
 }
